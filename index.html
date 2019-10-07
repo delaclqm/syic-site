@@ -19,25 +19,29 @@
 
     <style>
         .tabs .tab a {
-            color: rgba(38, 166, 154, 0.7);
+            color: #388E3C;
             /*Custom Text Color*/
         }
 
         .tabs .tab a:hover {
-            color: #26a69a;
+            color: rgb(35, 88, 37);
             /*Custom Color On Hover*/
         }
 
         .tabs .tab a:focus.active {
-            color: #26a69a;
+            color: #388E3C;
             /*Custom Text Color While Active*/
-            background-color: rgba(38, 166, 154, 0.2);
+            background-color: rgba(64, 166, 38, 0.25);
             /*Custom Background Color While Active*/
         }
 
         .tabs .indicator {
-            background-color: #26a69a;
+            background-color: #388E3C;
             /*Custom Color Of Indicator*/
+        }
+
+        .tabs .tab a:hover, .tabs .tab a.active {
+            color: rgb(26, 73, 28);
         }
     </style>
 </head>
@@ -83,30 +87,30 @@
         <div class="row" style="position:relative;">
             <div class="col s12">
                 <ul class="tabs">
-                    <li class="tab col s3"><a href="#test1">What is the Green Score?</a></li>
-                    <li class="tab col s3"><a href="#test2">Consumer View</a></li>
-                    <li class="tab col s3"><a href="#test3">Small Business View</a></li>
-                    <li class="tab col s3"><a href="#test4">Future State</a></li>
+                    <li class="tab col s3"><a href="#what-is-the-gs">What is it?</a></li>
+                    <li class="tab col s3"><a href="#consumer-view">Consumer View</a></li>
+                    <li class="tab col s3"><a href="#small-business-view">Small Business View</a></li>
+                    <li class="tab col s3"><a href="#future-state">Future State</a></li>
                 </ul>
             </div>
-            <div id="test1" class="col s12">
+            <div id="what-is-the-gs" class="col s12">
                 <div class="row">
                     <h1>The Green Score</h1>
                 </div>
             </div>
-            <div id="test2" class="col s12">
+            <div id="consumer-view" class="col s12">
                 <div class="row">
-                    <h1>The Green Score</h1>
+                    <h1>Consumer View</h1>
                 </div>
             </div>
-            <div id="test3" class="col s12">
+            <div id="small-business-view" class="col s12">
                 <div class="row">
-                    <h1>The Green Score</h1>
+                    <h1>Small Business View</h1>
                 </div>
             </div>
-            <div id="test4" class="col s12">
+            <div id="future-state" class="col s12">
                 <div class="row">
-                    <h1>The Green Score</h1>
+                    <h1>Future State</h1>
                 </div>
             </div>
         </div>
