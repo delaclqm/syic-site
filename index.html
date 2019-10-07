@@ -15,6 +15,12 @@
             $('.sidenav').sidenav();
             $('.tabs').tabs();
         });
+
+        function switchTab(tabToSwitchTo) {
+            var elem = document.querySelector('.tabs');
+            var instance = M.Tabs.getInstance(elem);
+            instance.select(tabToSwitchTo);
+        }
     </script>
 
     <style>
@@ -45,12 +51,6 @@
                 </a>
                 <span>The Green Score</span>
             </a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li>
-                    <a href="#prof">
-                        <i class="material-icons left">assignment_ind</i>Profile</a>
-                </li>
-            </ul>
         </div>
     </nav>
     <!-- Mobile-Friendly Navigation -->
@@ -66,15 +66,25 @@
             </div>
         </li>
         <li>
-            <a class="sidenav-close" href="#conn">
-                <i class="material-icons left">share</i>Connect</a>
+            <a class="sidenav-close" onclick="switchTab('what-is-the-gs')">
+                <i class="material-icons left">question_answer</i>What is it?
+            </a>
+            <a class="sidenav-close" onclick="switchTab('consumer-view')">
+                <i class="material-icons left">person</i>Consumer View
+            </a>
+            <a class="sidenav-close" onclick="switchTab('small-business-view')">
+                <i class="material-icons left">business_center</i>Small Business View
+            </a>
+            <a class="sidenav-close" onclick="switchTab('future-state')">
+                <i class="material-icons left">settings_backup_restore</i>Future State
+            </a>
         </li>
     </ul>
     <!-- End Navigation Content -->
 
     <div class="container">
         <div class="row" style="position:relative;">
-            <div class="col s12">
+            <div class="col s12 hide-on-med-and-down">
                 <ul class="tabs">
                     <li class="tab col s3"><a href="#what-is-the-gs">What is it?</a></li>
                     <li class="tab col s3"><a href="#consumer-view">Consumer View</a></li>
