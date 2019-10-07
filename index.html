@@ -1,14 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
+
 <body>
-    <p>
-        Hello Group!
-    </p>
+    <!-- Begin Navigation Content -->
+    <nav class="nav-fixed blue darken-2">
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
+                <span>Green Score</span>
+            </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li>
+                    <a href="#prof">
+                        <i class="material-icons left">assignment_ind</i>Profile</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Mobile-Friendly Navigation -->
+    <ul class="sidenav" id="mobile-demo">
+        <li>
+            <div class="user-view">
+                <a href="#name">
+                    <span class="black-text name">Green Score</span>
+                </a>
+                <a href="mailto:delaclqm@miamioh.edu">
+                    <span class="black-text email">Fifth Third Bank</span>
+                </a>
+            </div>
+        </li>
+        <li>
+            <a class="sidenav-close" href="#conn">
+                <i class="material-icons left">share</i>Connect</a>
+        </li>
+    </ul>
+    <!-- End Navigation Content -->
+
 </body>
+
 </html>
