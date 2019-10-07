@@ -6,14 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Green Score | Fifth Third</title>
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!--Import Google Icon Font-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <link type="text/css" rel="stylesheet" href="Content/materialize.min.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="Scripts/jquery-1.12.4.min.js"></script>
     <script type="text/JavaScript">
         // Initialize the SideNav
         $(document).ready(function () {
@@ -21,12 +16,36 @@
             $('.tabs').tabs();
         });
     </script>
+
+    <style>
+        .tabs .tab a {
+            color: rgba(38, 166, 154, 0.7);
+            /*Custom Text Color*/
+        }
+
+        .tabs .tab a:hover {
+            color: #26a69a;
+            /*Custom Color On Hover*/
+        }
+
+        .tabs .tab a:focus.active {
+            color: #26a69a;
+            /*Custom Text Color While Active*/
+            background-color: rgba(38, 166, 154, 0.2);
+            /*Custom Background Color While Active*/
+        }
+
+        .tabs .indicator {
+            background-color: #26a69a;
+            /*Custom Color Of Indicator*/
+        }
+    </style>
 </head>
 
 <body>
     <!-- Begin Navigation Content -->
-    <nav class="nav-fixed green darken-2">
-        <div class="nav-wrapper">
+    <nav class="nav-fixed green darken-2 z-depth-0">
+        <div class="nav-wrapper z-depth-0">
             <a href="index.html" class="brand-logo">
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger">
                     <i class="material-icons">menu</i>
@@ -61,19 +80,35 @@
     <!-- End Navigation Content -->
 
     <div class="container">
-        <div class="row">
+        <div class="row" style="position:relative;">
             <div class="col s12">
                 <ul class="tabs">
-                    <li class="tab col s3"><a href="#test1">Screen 1</a></li>
-                    <li class="tab col s3"><a href="#test2">Screen 2</a></li>
-                    <li class="tab col s3"><a href="#test3">Screen 3</a></li>
-                    <li class="tab col s3"><a href="#test4">Screen 4</a></li>
+                    <li class="tab col s3"><a href="#test1">What is the Green Score?</a></li>
+                    <li class="tab col s3"><a href="#test2">Consumer View</a></li>
+                    <li class="tab col s3"><a href="#test3">Small Business View</a></li>
+                    <li class="tab col s3"><a href="#test4">Future State</a></li>
                 </ul>
             </div>
-            <div id="test1" class="col s12">Screen 1</div>
-            <div id="test2" class="col s12">Screen 2</div>
-            <div id="test3" class="col s12">Screen 3</div>
-            <div id="test4" class="col s12">Screen 4</div>
+            <div id="test1" class="col s12">
+                <div class="row">
+                    <h1>The Green Score</h1>
+                </div>
+            </div>
+            <div id="test2" class="col s12">
+                <div class="row">
+                    <h1>The Green Score</h1>
+                </div>
+            </div>
+            <div id="test3" class="col s12">
+                <div class="row">
+                    <h1>The Green Score</h1>
+                </div>
+            </div>
+            <div id="test4" class="col s12">
+                <div class="row">
+                    <h1>The Green Score</h1>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -103,6 +138,8 @@
     </footer>
     <!-- End Footer -->
 
+    <!-- JavaScript at end of body for optimized loading -->
+    <script type="text/javascript" src="Scripts/materialize.min.js"></script>
 </body>
 
 </html>
