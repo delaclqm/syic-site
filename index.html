@@ -10,118 +10,23 @@
 
     <!-- Files in Project -->
     <link type="text/css" rel="stylesheet" href="Content/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="Content/site.css" />
     <script src="Scripts/jquery-1.12.4.min.js"></script>
+    <script src="Scripts/site.js"></script>
 
     <!-- Files imported from CDN -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
-
-    <!-- Scripts for page -->
-    <script type="text/JavaScript">
-        // Initialize the SideNav and Tabs
-        $(document).ready(function () {
-            $('.sidenav').sidenav();
-            $('.tabs').tabs();
-        });
-
-        /**
-            Function to switch to a different tab using the Materialize function
-            @param tabToSwitchTo - String refernece to the ID of the content's div
-        */
-        function switchTab(tabToSwitchTo) {
-            var elem = document.querySelector('.tabs');
-            var instance = M.Tabs.getInstance(elem);
-            instance.select(tabToSwitchTo);
-        }
-
-        /**
-            All the Google Charts Functions
-        */
-        // google.charts.load('current', {packages: ['corechart']});
-        // google.charts.setOnLoadCallback(drawCharts);
-
-        // // Callback function for drawing charts
-        // function drawCharts() {
-        //     drawPieChart();
-        // }
-
-        // function drawPieChart() {
-        //     // Define the chart to be drawn.
-        //     let data = new google.visualization.DataTable();
-        //     data.addColumn('string', 'Element');
-        //     data.addColumn('number', 'Percentage');
-        //     data.addRows([
-        //         ['Nitrogen', 0.78],
-        //         ['Oxygen', 0.21],
-        //         ['Other', 0.01]
-        //     ]);
-
-        //     // Define the chart options
-        //     // Set chart options
-        //     let options = {
-        //         'title':'Composition of Air'
-        //     };
-
-        //     // Instantiate and draw the chart.
-        //     let chart = new google.visualization.PieChart(document.getElementById('myPieChart'));
-        //     chart.draw(data, options);
-        // }
-    </script>
-
-    <!-- CSS for page -->
-    <style>
-        .ft-green {
-            background-color: #00af66 !important;
-            color: #ffffff !important;
-        }
-
-        .ft-lapis {
-            background-color: #162758 !important;
-            color: #fff !important;
-        }
-
-        .ft-lapis-darker {
-            background-color: #0b142e !important;
-            color: #fff !important;
-        }
-
-        .tabs .tab a {
-            color: #00af66;
-            /*Custom Text Color*/
-            font-weight: bold;
-        }
-
-        .tabs .tab a:hover,
-        .tabs .tab a.active {
-            color: #000000;
-            /*Custom Color On Hover*/
-        }
-
-        .tabs .tab a:focus.active {
-            color: #00af66;
-            /*Custom Text Color While Active*/
-            background-color: rgba(64, 166, 38, 0.25);
-            /*Custom Background Color While Active*/
-        }
-
-        .tabs .indicator {
-            background-color: #00af66;
-            /*Custom Color Of Indicator*/
-        }
-    </style>
 </head>
 
 <body>
     <!-- Begin Navigation Content -->
     <nav class="nav-fixed ft-lapis z-depth-0">
-        <div class="nav-wrapper container valign-wrapper z-depth-0">
+        <div class="nav-wrapper container z-depth-0">
             <a href="index.html" class="brand-logo">
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger">
                     <i class="material-icons">menu</i>
                 </a>
-                <img class="circle" src="assets/GreenSealLogo.png" alt="Green Score Logo"
-                    style="height: 3em; margin-right: 1em;">
-                <span class="hide-on-med-and-down">The Green Score</span>
+                <img class="circle brand-logo" src="assets/GreenSealLogo.png" alt="Green Score Logo" style="height: 90%;">
             </a>
         </div>
     </nav>
@@ -130,7 +35,7 @@
         <li>
             <div class="user-view">
                 <a href="#">
-                    <img class="circle" src="assets/GreenSealLogo.png" alt="Green Score Logo">
+                    <img class="circle" src="assets/GreenSealLogo.png" alt="Green Seal Logo">
                 </a>
                 <a href="#name">
                     <span class="black-text name">Fifth Third Bank</span>
@@ -217,7 +122,7 @@
             <!-- BEGIN CONSUMER VIEW OF GREEN SCORE -->
             <div id="consumer-view" class="col s12">
                 <div class="row">
-                    <h1 class="col s12">Consumer View</h1>
+                    <h2 class="col s12">Consumer View</h2>
                     <span class="col s12">
                         <hr></span>
                 </div>
@@ -240,8 +145,8 @@
                     </div>
                     <div class="col s12 center-align">
                         <br>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdG8ZREdWlV22ZYR7n_VFeiBU2KEzQ0Bs3G-XHi7E1hZNoQ2Q/viewform?usp=sf_link"
-                            class="btn waves-effect waves-light ft-green">Green Score Survey</a>
+                        <a href="green-score.html"
+                            class="btn waves-effect waves-light ft-green">Green Score Site</a>
                     </div>
                 </div>
             </div>
