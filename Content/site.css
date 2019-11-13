@@ -45,3 +45,13 @@
 .pointer {
     cursor: pointer;
 }
+
+.font-9 {
+    font-size: 9pt;
+}
+
+.img {
+    height: 2em;
+    width: auto;
+    margin-right: 0.5em;
+}
