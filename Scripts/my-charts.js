@@ -75,15 +75,15 @@ function drawCharts() {
                 yAxes: [
                     {
                         ticks: {
-                            beginAtZero: true,
+                            min: 1,
                             fontColor: '#ffffff',
                             stepSize: 1,
                             callback: function (value, index, values) {
-                                if (value < 1) return 'F';
-                                if (value < 2) return 'D';
-                                if (value < 3) return 'C';
-                                if (value < 4) return 'B';
-                                if (value <= 5) return 'A';
+                                if (value >= 5) return 'A';
+                                if (value >= 4) return 'B';
+                                if (value >= 3) return 'C';
+                                if (value >= 2) return 'D';
+                                else return 'F';
                             }
                         }
                     }
