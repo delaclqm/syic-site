@@ -31,25 +31,32 @@ function myMap() {
     // All properties global to markers
     var markerProps = {
         map: map,
-        animation: google.maps.Animation.DROP,
         icon: {
             url: "../assets/GreenSealLogo.png", // url
             scaledSize: new google.maps.Size(40, 40), // scaled size
         }
     };
 
-    // Our Markers
+    // ============================================= Markers
+    // =================== Kofenya
     var kofenyaMarker = new google.maps.Marker({
         ...markerProps,
         position: new google.maps.LatLng(39.510712, -84.743683),
         title: 'Kofenya',
     });
-    var wildBerryMarker = new google.maps.Marker({
-        ...markerProps,
-        position: new google.maps.LatLng(39.510272,-84.7436282),
-        title: 'Wild Berry'
+    var contentString = '<div>' +
+        '<h5 class="ft-green-text bold">Kofenya</h5>' +
+        '<div id="bodyContent">' +
+        '<p>Here is a Fifth Third Green Seal approved business.</p>' +
+        '</div>' +
+        '</div>';
+
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString
     });
-    
+    kofenyaMarker.addListener('click', function () {
+        infowindow.open(map, kofenyaMarker);
+    });
 }
 
 /**
@@ -57,40 +64,46 @@ function myMap() {
  */
 function drawCharts() {
     var ctx = document.getElementById('myChart');
-        var myChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                datasets: [{
-                    label: '# of Votes',
+    var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['May', 'June', 'July', 'August', 'September', 'October'],
+            datasets: [
+                {
                     data: [12, 19, 3, 5, 2, 3],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)',
-                        'rgba(255, 159, 64, 0.2)'
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)'
-                    ],
-                    borderWidth: 2
-                }]
-            },
-            options: {
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero: true
-                        }
-                    }]
+                    backgroundColor: '#00af66'
                 }
+            ],
+        },
+        options: {
+            title: {
+                display: true,
+                text: 'My Savings by Month',
+                fontColor: '#ffffff'
+            },
+            legend: {
+                display: false
+            },
+            scales: {
+                yAxes: [
+                    {
+                        ticks: {
+                            beginAtZero: true,
+                            fontColor: '#ffffff',
+                            callback: function (value, index, values) {
+                                return value.toLocaleString("en-US", { style: "currency", currency: "USD" });
+                            }
+                        }
+                    }
+                ],
+                xAxes: [
+                    {
+                        ticks: {
+                            fontColor: '#ffffff'
+                        }
+                    }
+                ]
             }
-        });
+        }
+    });
 }

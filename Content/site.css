@@ -50,6 +50,10 @@
     font-size: 9pt;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .img {
     height: 2em;
     width: auto;
