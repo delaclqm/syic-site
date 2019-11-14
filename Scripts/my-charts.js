@@ -9,7 +9,7 @@ function drawCharts() {
             labels: ['May', 'June', 'July', 'August', 'September', 'October'],
             datasets: [
                 {
-                    data: [12, 19, 3, 5, 2, 3],
+                    data: [28, 10, 22, 20, 24, 25],
                     backgroundColor: '#00af66'
                 }
             ],
@@ -51,10 +51,10 @@ function drawCharts() {
     var myBarChart = new Chart(ctx2, {
         type: 'bar',
         data: {
-            labels: ['May', 'June', 'July', 'August', 'September', 'October'],
+            labels: ['Food & Drink', 'Clothing', 'Health & Beauty'],
             datasets: [
                 {
-                    data: [12, 19, 3, 5, 2, 3],
+                    data: [3, 4, 5],
                     backgroundColor: '#00af66'
                 }
             ],
@@ -62,11 +62,14 @@ function drawCharts() {
         options: {
             title: {
                 display: true,
-                text: 'My Savings by Month',
+                text: 'My Score by Purchasing Groups',
                 fontColor: '#ffffff'
             },
             legend: {
                 display: false
+            },
+            tooltips: {
+                enabled: false
             },
             scales: {
                 yAxes: [
@@ -74,8 +77,13 @@ function drawCharts() {
                         ticks: {
                             beginAtZero: true,
                             fontColor: '#ffffff',
+                            stepSize: 1,
                             callback: function (value, index, values) {
-                                return value.toLocaleString("en-US", { style: "currency", currency: "USD" });
+                                if (value < 1) return 'F';
+                                if (value <= 2) return 'D';
+                                if (value <= 3) return 'C';
+                                if (value <= 4) return 'B';
+                                if (value <= 5) return 'A';
                             }
                         }
                     }
