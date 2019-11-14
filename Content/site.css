@@ -18,6 +18,15 @@ body {
     font-weight: 300;
 }
 
+.greyer-text {
+    color: #0b142e;
+    font-weight: lighter;
+}
+
+.light-text {
+    font-weight: lighter;
+}
+
 .ft-lapis {
     background-color: #162758 !important;
     color: #fff !important;
@@ -78,4 +87,12 @@ blockquote {
     height: 3em;
     width: auto;
     margin: 1em;
+}
+
+.in-line {
+    display: inline;
+}
+
+.text-depth {
+    text-shadow: 3px 3px 8px #000000
 }

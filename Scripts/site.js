@@ -5,6 +5,7 @@ $(document).ready(function () {
     $('.tabs').tabs();
     $('.modal').modal();
     $('.collapsible').collapsible();
+    $('.tooltipped').tooltip();
     drawCharts();
 });
 
