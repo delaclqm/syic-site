@@ -12,7 +12,7 @@ function myMap() {
     var markerProps = {
         map: map,
         icon: {
-            url: "~/assets/GreenSealLogo.png", // url
+            url: "assets/GreenSealLogo.png", // url
             scaledSize: new google.maps.Size(40, 40), // scaled size
         }
     };
