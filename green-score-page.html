@@ -13,6 +13,8 @@
     <link type="text/css" rel="stylesheet" href="Content/site.css" />
     <script src="Scripts/jquery-1.12.4.min.js"></script>
     <script src="Scripts/site.js"></script>
+    <script src="Scripts/google-maps.js"></script>
+    <script src="Scripts/my-charts.js"></script>
 
     <!-- Files imported from CDN -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -20,7 +22,7 @@
 
 <body>
     <!-- Begin Navigation Content -->
-    <nav class="nav-fixed ft-lapis z-depth-0">
+    <nav class="nav-fixed ft-lapis sticky">
         <div class="nav-wrapper v-align-wrapper container z-depth-0">
             <a href="index.html" class="brand-logo">
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger">
@@ -78,7 +80,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col s12 l6">
+            <div class="col s12">
                 <div class="card ft-lapis">
                     <div class="card-content">
                         <span class="card-title">
@@ -94,15 +96,23 @@
                         </h1>
                     </div>
                     <div class="card-action right-align">
-                        <a class="ft-green-text bold" href="#">Share My Score!</a>
+                        <a class="modal-trigger ft-green-text bold" href="#share">Share My Score!</a>
                     </div>
                 </div>
             </div>
-
+        
+        
             <div class="col s12 l6">
                 <div class="card ft-lapis">
                     <div class="card-content white-text">
-                        <canvas id="myChart"></canvas>
+                        <canvas id="myLineChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l6">
+                <div class="card ft-lapis">
+                    <div class="card-content white-text">
+                        <canvas id="myBarChart"></canvas>
                     </div>
                 </div>
             </div>
@@ -110,33 +120,19 @@
 
         <div class="row">
             <div class="col s12">
-                <h5>Why is this my Green Score?</h5>
+                <h5>My Main Purchase Categories</h5>
             </div>
 
             <div class="col s12">
                 <ul class="collapsible">
                     <li>
-                        <div class="collapsible-header"><i class="material-icons">local_laundry_service</i>Cleaning
-                            Supplies
-                        </div>
-                        <div class="collapsible-body">
-                            <span>Lorem ipsum dolor sit amet.</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">spa</i>Health & Beauty</div>
-                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">restaurant</i>Food (Grocery Bought)
-                        </div>
+                        <div class="collapsible-header"><i class="material-icons">restaurant</i>Food & Drink                       </div>
                         <div class="collapsible-body">
                             <table class="responsive-table highlight">
                                 <thead>
                                     <tr>
                                         <th>Item Purchased</th>
                                         <th>Purchase Date</th>
-                                        <th>Item Sustainability</th>
                                         <th>Sustainability Score</th>
                                         <th>Suggestions</th>
                                     </tr>
@@ -144,10 +140,9 @@
 
                                 <tbody>
                                     <tr>
-                                        <td>Coke</td>
+                                        <td>Starbucks Venti Latte</td>
                                         <td>Today</td>
-                                        <td>Not</td>
-                                        <td>D</td>
+                                        <td>C</td>
                                         <td>
                                             <a class="btn modal-trigger ft-green waves-effect waves-light"
                                                 href="#product-suggestion">See Suggestions</a>
@@ -156,10 +151,6 @@
                                 </tbody>
                             </table>
                         </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">local_pharmacy</i>Pharmacy</div>
-                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
                     </li>
                 </ul>
             </div>
@@ -212,18 +203,38 @@
     <!-- End Footer -->
 
     <!-- START MODALS -->
+    <div id="share" class="modal ft-lapis bottom-sheet">
+        <div class="modal-content center-align">
+            <h4 class="white-text">Share Your Green Score!</h4>
+            <p class="white-text">
+                Sharing your green score can allow you to show your friends how sustainable you are!
+            </p>
+            <div class="center-align valign-center">
+                <img src="assets/social-media/facebook.svg" alt="Facebook" class="social">
+                <img src="assets/social-media/instagram.svg" alt="Instagram" class="social">
+                <img src="assets/social-media/linkedin.svg" alt="LinkedIn" class="social">
+                <img src="assets/social-media/pinterest.svg" alt="Pintrest" class="social">
+                <img src="assets/social-media/twitter.svg" alt="Twitter" class="social">
+            </div>
+        </div>
+    </div>
+
     <div id="product-suggestion" class="modal">
         <div class="modal-content">
-            <h4>Suggestions</h4>
-            <p>
-                Coke is NOT sustainable because so much plastic! My god!
-            </p>
-        </div>
-        <div class="modal-footer">
-            <div class="center-align">
-                <a href="#" class="modal-close waves-effect waves-light btn-flat">
-                    <i class="material-icons left">clear</i>Close
-                </a>
+            <h4>Starbucks</h4>
+            <div class="row valign-wrapper">
+                <div class="col s2">
+                    <img src="assets/starbucks.webp" alt="Starbucks logo" style="width: 100%; height: auto;">
+                </div>
+                <div class="col s10">
+                    <h6><strong>Purchase:</strong> Venti Latte (Disposable Cup)</h6>
+                    <blockquote>
+                        30% off your next order if you buy a Reusable Cup!
+                        <a href="#" class="btn ft-green waves-effect waves-light modal-close" style="float: right;">
+                            Redeem Now!
+                        </a>
+                    </blockquote>
+                </div>
             </div>
         </div>
     </div>
