@@ -50,7 +50,7 @@
                 </li>
                 <li>
                     <a class="ft-green btn waves-effect waves-light modal-trigger" href="#connect-card">
-                        <i class="material-icons left">link</i>Connect Other Cards
+                        <i class="material-icons left">link</i>Link Cards
                     </a>
                 </li>
             </ul>
@@ -58,8 +58,13 @@
     </nav>
     <!-- Mobile-Friendly Navigation -->
     <ul class="sidenav ft-lapis" id="mobile-demo">
+        <li class="right" style="z-index: 100; text-align: right;">
+            <a class="sidenav-close" href="#" style="padding: 0; margin: 0;">
+                <i class="material-icons white-text" style="padding: 0; margin: 0;">close</i>
+            </a>
+        </li>
         <li>
-            <div class="user-view">
+            <div class="user-view" style="width: 80%">
                 <a href="#">
                     <img src="assets/GreenScoreLogo.png" alt="Green Score Logo" style="height: 6em;">
                 </a>
@@ -82,10 +87,12 @@
                 <i class="white-text material-icons left">help</i>About the Score
             </a>
             <a class="ft-green btn waves-effect waves-light modal-trigger sidenav-close" href="#connect-card">
-                <i class="material-icons white-text left">link</i>Connect Cards
+                <i class="material-icons white-text left">link</i>Link Cards
             </a>
         </li>
+        </div>
     </ul>
+    </div>
     <!-- End Navigation Content -->
 
     <div class="container">
@@ -102,15 +109,11 @@
                         </span>
                         <hr>
                         <div class="center-align">
-                            <a class="modal-trigger" href="#a">
-                                <h1 class="in-line greyer-text tooltipped" data-position="top"
-                                    data-tooltip="Tips to Improve">
-                                    A
-                                </h1>
-                            </a>
+                            <h1 class="in-line greyer-text">
+                                A
+                            </h1>
                             <a class="modal-trigger" href="#b">
-                                <h1 class="in-line text-depth ft-green-text center-align bold tooltipped"
-                                    data-position="bottom" data-tooltip="Score Breakdown">
+                                <h1 class="in-line text-depth ft-green-text center-align bold">
                                     B
                                 </h1>
                             </a>
@@ -123,10 +126,14 @@
                             <h1 class="in-line greyer-text">
                                 F
                             </h1>
+                            <p class="note-text">(Click Your Score to See the Breakdown)</p>
                         </div>
                     </div>
-                    <div class="card-action right-align">
-                        <a class="modal-trigger ft-green-text bold" href="#share">Share My Score!</a>
+                    <div class="card-action">
+                        <div class="right-align">
+                            <a class="modal-trigger ft-green-text bold" href="#a">Tips to Improve</a>
+                            <a class="modal-trigger btn ft-green" href="#share">Share My Score!</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -154,9 +161,14 @@
             </div>
 
             <div class="col s12">
-                <ul class="collapsible">
+                <ul class="collapsible popout">
                     <li>
-                        <div class="collapsible-header"><i class="material-icons">restaurant</i>Food & Drink </div>
+                        <div class="collapsible-header">
+                            <i class="material-icons left">restaurant</i>
+                            <span class="left">Food & Drink</span>
+                            <i class="material-icons right more flex-right">expand_more</i>
+                            <i class="material-icons right less flex-right" style="display: none">expand_less</i>
+                        </div>
                         <div class="collapsible-body">
                             <table class="responsive-table highlight">
                                 <thead>
@@ -180,6 +192,30 @@
                                     </tr>
                                 </tbody>
                             </table>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="collapsible popout">
+                    <li>
+                        <div class="collapsible-header">
+                            <i class="material-icons left">storefront</i>
+                            <span class="left">Clothing</span>
+                            <i class="material-icons right more flex-right">expand_more</i>
+                            <i class="material-icons right less flex-right" style="display: none">expand_less</i>
+                        </div>
+                        <div class="collapsible-body">
+                        </div>
+                    </li>
+                </ul>
+                <ul class="collapsible popout">
+                    <li>
+                        <div class="collapsible-header">
+                            <i class="material-icons left">spa</i>
+                            <span class="left">Health & Beauty</span>
+                            <i class="material-icons right more flex-right">expand_more</i>
+                            <i class="material-icons right less flex-right" style="display: none">expand_less</i>
+                        </div>
+                        <div class="collapsible-body">
                         </div>
                     </li>
                 </ul>

@@ -6,6 +6,10 @@ $(document).ready(function () {
     $('.modal').modal();
     $('.collapsible').collapsible();
     $('.tooltipped').tooltip();
+    $( ".collapsible-header" ).click(function() {
+        $(".more",this).toggle()
+        $(".less", this).toggle()
+    });
     drawCharts();
 });
 

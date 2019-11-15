@@ -2,6 +2,24 @@ body {
     position: relative;
 }
 
+.card, .card-action, .btn, #googleMap, li, .collapsible, .collapsible-header {
+    border-radius: 2em !important;
+}
+
+.collapsible-body {
+    border: none;
+}
+
+.flex-right {
+    flex: 1 1 0%;
+    text-align: right !important;
+}
+
+.sidenav {
+    border-radius: 0 9em 0 0;
+    overflow: visible;
+}
+
 .sticky {
     position: sticky;
     top: 0;
@@ -25,6 +43,11 @@ body {
 
 .light-text {
     font-weight: lighter;
+}
+
+.note-text {
+    font-size: 12px;;
+    color: #6f6f6f;
 }
 
 .ft-lapis {
