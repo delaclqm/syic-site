@@ -2,8 +2,16 @@ body {
     position: relative;
 }
 
-.card, .card-action, .btn, #googleMap, li, .collapsible, .collapsible-header {
+.card, .card-image, .card-action, .btn, #googleMap, li, .collapsible, .collapsible-header {
     border-radius: 2em !important;
+}
+
+.bisect {
+    margin-top: 0.3em;
+}
+
+.more-margin {
+    margin-bottom: 2em;
 }
 
 .collapsible-body {

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="assets/Fifth-Third.png" type="image/png" sizes="400x400">
+    <title>Green Score | Fifth Third</title>
+
+    <!-- Files in Project -->
+    <link type="text/css" rel="stylesheet" href="Content/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="Content/site.css" />
+    <script src="Scripts/jquery-1.12.4.min.js"></script>
+    <script src="Scripts/site.js"></script>
+
+    <!-- Files imported from CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Begin Navigation Content -->
+    <nav class="nav-fixed ft-lapis z-depth-0">
+        <div class="nav-wrapper container z-depth-0">
+            <a href="index.html" class="brand-logo">
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
+                <img class="circle brand-logo" src="assets/GreenSealLogo.png" alt="Green Score Logo" style="height: 90%;">
+            </a>
+        </div>
+    </nav>
+    <!-- Mobile-Friendly Navigation -->
+    <ul class="sidenav" id="mobile-demo">
+        <li>
+            <div class="user-view">
+                <a href="#">
+                    <img class="circle" src="assets/GreenSealLogo.png" alt="Green Seal Logo">
+                </a>
+                <a href="#name">
+                    <span class="black-text name">Fifth Third Bank</span>
+                </a>
+                <a href="#">
+                    <span class="black-text email">The Green Score</span>
+                </a>
+            </div>
+        </li>
+        <li>
+            <a class="sidenav-close" onclick="switchTab('what-is-the-gs')">
+                <i class="material-icons left">question_answer</i>What is it?
+            </a>
+            <a class="sidenav-close" onclick="switchTab('consumer-view')">
+                <i class="material-icons left">person</i>Consumer View
+            </a>
+            <a class="sidenav-close" onclick="switchTab('small-business-view')">
+                <i class="material-icons left">business_center</i>Small Business View
+            </a>
+            <a class="sidenav-close" onclick="switchTab('future-state')">
+                <i class="material-icons left">settings_backup_restore</i>Future State
+            </a>
+        </li>
+    </ul>
+    <!-- End Navigation Content -->
+
+    <div class="container">
+        <div class="row" style="position:relative;">
+            <div class="col s12 hide-on-med-and-down">
+                <ul class="tabs">
+                    <li class="tab col s3"><a href="#what-is-the-gs">What is it?</a></li>
+                    <li class="tab col s3"><a href="#consumer-view">Consumer View</a></li>
+                    <li class="tab col s3"><a href="#small-business-view">Small Business View</a></li>
+                    <li class="tab col s3"><a href="#future-state">Future State</a></li>
+                </ul>
+            </div>
+
+            <!-- BEGIN WHAT IS THE GREEN SCORE -->
+            <div id="what-is-the-gs" class="col s12">
+                <div class="row">
+                    <div class="valign-wrapper">
+                        <div class="col s9">
+                            <h1>The Green Score</h1>
+                        </div>
+                        <div class="col s3 right-align">
+                            <img src="assets/GreenScoreLogo.png" alt="Green Seal Logo"
+                                style="width: auto; height: 7em;">
+                        </div>
+                    </div>
+                    <span class="col s12">
+                        <hr></span>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <h3>What is it?</h3>
+                        <p>
+                            Fifth Third’s new Green Score is the beginning of living a sustainable life. Seamlessly
+                            integrated
+                            into your online banking, the Green Score uses your purchase data to assess your
+                            sustainability efforts.
+                            We have power as individuals to make a difference with the purchases we make, and Fifth
+                            Third’s Green
+                            score helps you to see your impact while also guiding you to improve and live more
+                            sustainably.
+                        </p>
+                        <h3>Who is it for?</h3>
+                        <p>
+                            The typical Green Score user is a Millennial or member of Generation Z. These 20-40 year
+                            olds are
+                            either currently living sustainable lives or looking for ways they can become more
+                            sustainable.
+                            Although sustainability is an important aspect of their lives, economic incentives drive
+                            their
+                            purchasing behavior.
+                        </p>
+                        <h3>How did we come up with this?</h3>
+                        <p>Lots and lots of ideation and brainstorming...</p>
+                        <img src="assets/whiteboard.jpg" alt="Whiteboard Pic" style="width: 100%; height: auto;">
+                    </div>
+                </div>
+            </div>
+            <!-- END WHAT IS THE GREEN SCORE -->
+
+            <!-- BEGIN CONSUMER VIEW OF GREEN SCORE -->
+            <div id="consumer-view" class="col s12">
+                <div class="row">
+                    <h2 class="col s12">Consumer View</h2>
+                    <span class="col s12">
+                        <hr></span>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <p>
+                            The Green Score is an optional service that uses state-of-the-art technology to analyze your
+                            purchase
+                            data and assess your sustainability efforts. Using in-house data and self-submitted purchase
+                            information,
+                            users can access their Green Score in-app and on mobile and desktop.
+                        </p>
+                        <p>
+                            Scan barcodes of items you’ve bought, see local sustainable companies, and compare options
+                            to choose
+                            sustainable products. The Green Score helps you in your journey towards living more
+                            sustainably.
+                        </p>
+
+                    </div>
+                    <div class="col s12 center-align">
+                        <br>
+                        <a href="green-score-info.html"
+                            class="btn waves-effect waves-light ft-green">Green Score Information Site</a>
+                        <a href="green-score-page.html"
+                            class="btn waves-effect waves-light ft-green">My Score Site</a>
+                    </div>
+                </div>
+            </div>
+            <!-- END CONSUMER VIEW OF GREEN SCORE -->
+
+            <!-- BEGIN COMMERCIAL VIEW OF GREEN SCORE -->
+            <div id="small-business-view" class="col s12">
+                <div class="row">
+                    <div class="valign-wrapper">
+                        <div class="col s9">
+                            <h1>The Green Seal</h1>
+                        </div>
+                        <div class="col s3 right-align">
+                            <img src="assets/GreenSealLogo.png" alt="Green Seal Logo" style="width: auto; height: 7em;">
+                        </div>
+                    </div>
+                    <span class="col s12">
+                        <hr></span>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <p>
+                            The Green Seal is an optional service for our commercial clients, specifically small
+                            businesses to market
+                            themselves to current and potential customers as a company focused on being sustainability
+                            stewards. These
+                            B2C companies have the opportunity to receive a Green Seal after being validated as a
+                            noteworthy, sustainable
+                            business. Following the Seal’s approval, the businesses have the opportunity to receive
+                            sustainability
+                            advice from their Fifth Third personal banker. This advice will provide them more
+                            sustainable and financially
+                            feasible substitutes for current business processes.
+                        </p>
+                        <p>
+                            Sustainability goes beyond the individual, and companies play a role in maintaining the
+                            world we live in. The
+                            Green Seal helps companies in this process, and it shows consumers which companies are as
+                            dedicated as they are
+                            to the planet.
+                        </p>
+                    </div>
+                    <div class="col s12 center-align">
+                        <br>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdh7QJP_bNON9FWWcgkkCdNGOSjLdDCCZMboT6yHQRxLM3fYw/viewform?usp=sf_link"
+                            class="btn waves-effect waves-light ft-green">Green Seal Survey</a>
+                    </div>
+                </div>
+            </div>
+            <!-- END CONSUMER VIEW OF GREEN SCORE -->
+
+            <!-- BEGIN FUTURE STATE -->
+            <div id="future-state" class="col s12">
+                <div class="row">
+                    <h1>Future State</h1>
+                    <span class="col s12">
+                        <hr></span>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <p>
+                            This is more than just a score. This is an insight into your actions and their impact on the
+                            planet and those
+                            around us. This is a guide to help drive meaningful change and create a world for future
+                            generations. The Green
+                            Score is a tool for today that will help preserve our future.
+                        </p>
+                    </div>
+                    <div class="col s12 center">
+                        <br>
+                        <button class="btn waves-effect waves-light ft-green">Sign Up Now!</button>
+                    </div>
+                </div>
+            </div>
+            <!-- END FUTURE STATE -->
+
+        </div>
+    </div>
+
+    <!-- Begin Footer -->
+    <footer class="page-footer ft-lapis">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Fifth Third Green Score</h5>
+                    <p class="grey-text text-lighten-4">
+                        This is for educational and demonstration purposes only.
+                    </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="https://www.53.com">Fifth Third Home Page</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright ft-lapis-darker">
+            <div class="container">
+                © 2019 Fifth Third
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- JavaScript at end of body for optimized loading -->
+    <script type="text/javascript" src="Scripts/materialize.min.js"></script>
+</body>
+
+</html>
