@@ -56,41 +56,41 @@
     </nav>
     <!-- Mobile-Friendly Navigation -->
     <ul class="sidenav ft-lapis" id="mobile-demo">
-            <li class="right" style="z-index: 100; text-align: right;">
-                <a class="sidenav-close" href="#" style="padding: 0; margin: 0;">
-                    <i class="material-icons white-text" style="padding: 0; margin: 0;">close</i>
+        <li class="right" style="z-index: 100; text-align: right;">
+            <a class="sidenav-close" href="#" style="padding: 0; margin: 0;">
+                <i class="material-icons white-text" style="padding: 0; margin: 0;">close</i>
+            </a>
+        </li>
+        <li>
+            <div class="user-view" style="width: 80%">
+                <a href="#">
+                    <img src="assets/GreenScoreLogo.png" alt="Green Score Logo" style="height: 6em;">
                 </a>
-            </li>
-            <li>
-                <div class="user-view" style="width: 80%">
-                    <a href="#">
-                        <img src="assets/GreenScoreLogo.png" alt="Green Score Logo" style="height: 6em;">
-                    </a>
-                    <a href="#name">
-                        <span class="white-text name">Fifth Third Bank</span>
-                    </a>
-                    <a href="#">
-                        <span class="white-text email">The Green Score</span>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <a class="white-text" href="index.html">
-                    <i class="white-text material-icons left">bar_chart</i>My Score
+                <a href="#name">
+                    <span class="white-text name">Fifth Third Bank</span>
                 </a>
-                <a class="white-text" href="green-score-news.html">
-                    <i class="white-text material-icons left">people</i>Green Feed
+                <a href="#">
+                    <span class="white-text email">The Green Score</span>
                 </a>
-                <a class="white-text" href="about-the-score.html">
-                    <i class="white-text material-icons left">help</i>About the Score
-                </a>
-                <a class="ft-green btn waves-effect waves-light modal-trigger sidenav-close" href="#connect-card">
-                    <i class="material-icons white-text left">link</i>Link Cards
-                </a>
-            </li>
             </div>
-        </ul>
-        <!-- End Navigation Content -->
+        </li>
+        <li>
+            <a class="white-text" href="index.html">
+                <i class="white-text material-icons left">bar_chart</i>My Score
+            </a>
+            <a class="white-text" href="green-score-news.html">
+                <i class="white-text material-icons left">people</i>Green Feed
+            </a>
+            <a class="white-text" href="about-the-score.html">
+                <i class="white-text material-icons left">help</i>About the Score
+            </a>
+            <a class="ft-green btn waves-effect waves-light modal-trigger sidenav-close" href="#connect-card">
+                <i class="material-icons white-text left">link</i>Link Cards
+            </a>
+        </li>
+        </div>
+    </ul>
+    <!-- End Navigation Content -->
 
 
     <div class="container">
@@ -189,49 +189,88 @@
     </div>
 
 
-     <!-- Begin Footer -->
-     <footer class="page-footer ft-lapis">
+    <!-- Begin Footer -->
+    <footer class="page-footer ft-lapis">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Fifth Third Green Score</h5>
+                    <p class="grey-text text-lighten-4">
+                        This is for educational and demonstration purposes only.
+                    </p>
+                    <div class="switch">
+                        Make My Green Score Private:
+                        <label>
+                            <input type="checkbox">
+                            <span class="lever"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="https://www.53.com">Fifth Third Home Page</a>
+                        </li>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="index.html">My Green Score</a>
+                        </li>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="green-score-page.html">Green Score News</a>
+                        </li>
+                        <li>
+                            <a class="grey-text text-lighten-3" href=about-the-score.html>About the Score</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright ft-lapis-darker">
             <div class="container">
-                <div class="row">
-                    <div class="col l6 s12">
-                        <h5 class="white-text">Fifth Third Green Score</h5>
-                        <p class="grey-text text-lighten-4">
-                            This is for educational and demonstration purposes only.
-                        </p>
-                        <div class="switch">
-                            Make My Green Score Private: 
-                            <label>
-                                <input type="checkbox">
-                                <span class="lever"></span>
-                            </label>
+                © 2019 Fifth Third
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Begin FAB and Chat Modal -->
+    <div class="fixed-action-btn">
+        <a href="#chat-modal" class="modal-trigger btn-floating btn-large ft-green waves-effect waves-light tooltipped"
+            data-position="top"
+            data-tooltip="Chat with a Fifth Third Representative on other ways to improve your Green Score">
+            <i class="large material-icons">chat</i>
+        </a>
+    </div>
+    <div id="chat-modal" class="modal bottom-sheet ft-lapis">
+        <div class="container">
+            <div class="modal-content">
+                <h5 class="white-text">Chat with a Fifth Third Representative</h5>
+                <div class="note-text">
+                    Sam Wright (Fifth Third Sustainability Expert)
+                </div>
+                <div class="valign-wrapper">
+                    <img class="img img-responsive circle left" src="https://randomuser.me/api/portraits/men/60.jpg"
+                        alt="avatar">
+                    <div class="card" style="width: 50%; float: left; display: inline; margin: 0.5em;">
+                        <div class="card-content chat-box">
+                            <p class="black-text">Hello There! How can I help you today?</p>
                         </div>
                     </div>
-                    <div class="col l4 offset-l2 s12">
-                        <h5 class="white-text">Links</h5>
-                        <ul>
-                            <li>
-                                <a class="grey-text text-lighten-3" href="https://www.53.com">Fifth Third Home Page</a>
-                            </li>
-                            <li>
-                                <a class="grey-text text-lighten-3" href="index.html">My Green Score</a>
-                            </li>
-                            <li>
-                                <a class="grey-text text-lighten-3" href="green-score-page.html">Green Score News</a>
-                            </li>
-                            <li>
-                                <a class="grey-text text-lighten-3" href=about-the-score.html>About the Score</a>
-                            </li>
-                        </ul>
+                </div>
+                <div class="valign-wrapper" style="display: flex;">
+                    <div class="card" style="display: inline; margin: 0.5em; flex: 1;">
+                        <div class="card-content chat-box">
+                            <input class="remove right" placeholder="Your message..." type="text" name="" id="">
+                        </div>
+                    </div>
+                    <div style="text-align: right; display: inline; margin: 0.5em;">
+                        <i class="material-icons">send</i>
                     </div>
                 </div>
             </div>
-            <div class="footer-copyright ft-lapis-darker">
-                <div class="container">
-                    © 2019 Fifth Third
-                </div>
-            </div>
-        </footer>
-        <!-- End Footer -->
+        </div>
+    </div>
+    <!-- End FAB and Chat Modal -->
 
     <!-- START MODALS -->
     <div id="connect-card" class="modal ft-lapis bottom-sheet">
