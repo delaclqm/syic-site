@@ -1,4 +1,3 @@
-
 // Initialize the SideNav and Tabs
 $(document).ready(function () {
     $('.sidenav').sidenav();
