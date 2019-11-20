@@ -110,6 +110,22 @@ blockquote {
     cursor: pointer;
 }
 
+.progress-bar {
+    width: 265px; 
+    background-color: #ffffff; 
+    height: 4px; 
+    display: inline-flex; 
+    border-radius: 2px;
+}
+
+.progress-bar-fill {
+    background-color: #6f6f6f; 
+    height: 4px;
+    border-radius: 2px 0 0 2px;
+    width: 75px;
+    float: right;
+}
+
 .font-9 {
     font-size: 9pt;
 }

@@ -21,3 +21,5 @@ function switchTab(tabToSwitchTo) {
     var instance = M.Tabs.getInstance(elem);
     instance.select(tabToSwitchTo);
 }
+
+
