@@ -1,15 +1,24 @@
 // Initialize the SideNav and Tabs
 $(document).ready(function () {
+    var path = window.location.pathname;
+    var page = path.split("/").pop();
+
     $('.sidenav').sidenav();
     $('.tabs').tabs();
     $('.modal').modal();
     $('.collapsible').collapsible();
     $('.tooltipped').tooltip();
+    $('.dropdown-trigger').dropdown();
     $( ".collapsible-header" ).click(function() {
         $(".more",this).toggle()
         $(".less", this).toggle()
     });
-    drawCharts();
+
+    if (page == 'green-score-goals.html') {
+        drawChartsForGreenGoalsPage();
+    } else if ( page == 'index.html' ) {
+        drawChartsForGreenScorePage();
+    }
 });
 
 /**

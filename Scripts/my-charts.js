@@ -1,7 +1,7 @@
 /**
  * Charts to draw
  */
-function drawCharts() {
+function drawChartsForGreenScorePage() {
     var ctx = document.getElementById('myLineChart');
     var myChart = new Chart(ctx, {
         type: 'line',
@@ -90,6 +90,75 @@ function drawCharts() {
                 ],
                 xAxes: [
                     {
+                        ticks: {
+                            fontColor: '#ffffff'
+                        }
+                    }
+                ]
+            }
+        }
+    });
+}
+
+function drawChartsForGreenGoalsPage() {
+    var ctx1 = document.getElementById('foodChart');
+    var myFoodChart = new Chart(ctx1, {
+        type: 'bar',
+        data: {
+            labels: ['Food & Drink'],
+            datasets: [
+                {   
+                    label: 'Current',
+                    data: [3],
+                    backgroundColor: '#0b142e'
+                },
+                {   
+                    label: 'Goals Achieved',
+                    data: [0.2],
+                    backgroundColor: '#00af66'
+                },
+                {   
+                    label: 'If All Goals Achieved',
+                    data: [0.2],
+                    backgroundColor: '#04ff96'
+                },
+            ],
+        },
+        options: {
+            title: {
+                display: false,
+                text: 'Food & Drink Goals',
+                fontColor: '#ffffff'
+            },
+            legend: {
+                display: true,
+                position: 'right',
+                labels: {fontColor: '#ffffff'}
+            },
+            tooltips: {
+                enabled: false
+            },
+            scales: {
+                yAxes: [
+                    {
+                        stacked: true,
+                        ticks: {
+                            min: 1,
+                            fontColor: '#ffffff',
+                            stepSize: 1,
+                            callback: function (value, index, values) {
+                                if (value >= 5) return 'A';
+                                if (value >= 4) return 'B';
+                                if (value >= 3) return 'C';
+                                if (value >= 2) return 'D';
+                                else return 'F';
+                            }
+                        }
+                    }
+                ],
+                xAxes: [
+                    {
+                        stacked: true,
                         ticks: {
                             fontColor: '#ffffff'
                         }
