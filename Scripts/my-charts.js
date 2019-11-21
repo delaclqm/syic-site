@@ -2,30 +2,37 @@
  * Charts to draw
  */
 function drawChartsForGreenScorePage() {
+    var ctx4 = document.getElementById('myDonutChart');
+    var myDonutChart = new Chart(ctx4, {
+        type: 'doughnut',
+        data: {
+            labels: ['Met', 'Outstanding'],
+            datasets: [{ data: [75, 25], backgroundColor: ['#00af66', '#0b142e'] }],
+        },
+        options: {
+            title: { display: true, text: 'My Goal Achievement', fontColor: '#ffffff' },
+            legend: { display: true },
+            tooltips: { enabled: true },
+            scales: {
+                yAxes: [{ gridLines: {display: false}, ticks: { display: false }}],
+                xAxes: [{ gridLines: {display: false}, ticks: { display: false }}]
+            }
+        }
+    });
+
     var ctx = document.getElementById('myLineChart');
     var myChart = new Chart(ctx, {
         type: 'line',
         data: {
             labels: ['May', 'June', 'July', 'August', 'September', 'October'],
-            datasets: [
-                {
-                    data: [28, 10, 22, 20, 24, 25],
-                    backgroundColor: '#00af66'
-                }
-            ],
+            datasets: [{ data: [28, 10, 22, 20, 24, 25], backgroundColor: '#00af66' }],
         },
-        options: {
-            title: {
-                display: true,
-                text: 'My Savings by Month',
-                fontColor: '#ffffff'
-            },
-            legend: {
-                display: false
-            },
+        options: { 
+            responsive: true,
+            title: { display: true, text: 'My Savings by Month from the Green Score', fontColor: '#ffffff' },
+            legend: { display: false },
             scales: {
-                yAxes: [
-                    {
+                yAxes: [{
                         ticks: {
                             beginAtZero: true,
                             fontColor: '#ffffff',
@@ -33,15 +40,8 @@ function drawChartsForGreenScorePage() {
                                 return value.toLocaleString("en-US", { style: "currency", currency: "USD" });
                             }
                         }
-                    }
-                ],
-                xAxes: [
-                    {
-                        ticks: {
-                            fontColor: '#ffffff'
-                        }
-                    }
-                ]
+                }],
+                xAxes: [{ ticks: { fontColor: '#ffffff' }}]
             }
         }
     });
@@ -52,29 +52,14 @@ function drawChartsForGreenScorePage() {
         type: 'bar',
         data: {
             labels: ['Food & Drink', 'Clothing', 'Health & Beauty'],
-            datasets: [
-                {
-                    data: [3, 4, 5],
-                    backgroundColor: '#00af66'
-                }
-            ],
+            datasets: [{ data: [3, 4, 5], backgroundColor: '#00af66' }],
         },
         options: {
-            title: {
-                display: true,
-                text: 'My Score by Purchasing Groups',
-                fontColor: '#ffffff'
-            },
-            legend: {
-                display: false
-            },
-            tooltips: {
-                enabled: false
-            },
+            title: { display: true, text: 'My Score by Purchasing Groups', fontColor: '#ffffff' },
+            legend: { display: false },
+            tooltips: { enabled: false },
             scales: {
-                yAxes: [
-                    {
-                        ticks: {
+                yAxes: [{ ticks: {
                             min: 1,
                             fontColor: '#ffffff',
                             stepSize: 1,
@@ -85,16 +70,8 @@ function drawChartsForGreenScorePage() {
                                 if (value >= 2) return 'D';
                                 else return 'F';
                             }
-                        }
-                    }
-                ],
-                xAxes: [
-                    {
-                        ticks: {
-                            fontColor: '#ffffff'
-                        }
-                    }
-                ]
+                }}],
+                xAxes: [{ ticks: { fontColor: '#ffffff' }}]
             }
         }
     });

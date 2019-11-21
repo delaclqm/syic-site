@@ -197,4 +197,5 @@ blockquote {
 
 .flex-in {
     flex: auto;
+    margin: 0.25em;
 }

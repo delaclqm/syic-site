@@ -3,6 +3,9 @@ $(document).ready(function () {
     var path = window.location.pathname;
     var page = path.split("/").pop();
 
+    Chart.defaults.global.animation.easing = 'easeInOutCirc';
+    Chart.defaults.global.animation.duration = 2000;
+
     $('.sidenav').sidenav();
     $('.tabs').tabs();
     $('.modal').modal();
