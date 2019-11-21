@@ -19,79 +19,86 @@
 </head>
 
 <body>
-    <!-- Begin Navigation Content -->
-    <nav class="nav-fixed ft-lapis sticky">
-        <div class="nav-wrapper v-align-wrapper container z-depth-0">
-            <a href="index.html" class="brand-logo">
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-                    <i class="material-icons">menu</i>
-                </a>
+   <!-- Begin Navigation Content -->
+   <nav class="nav-fixed ft-lapis sticky">
+    <div class="nav-wrapper v-align-wrapper container z-depth-0">
+        <a href="index.html" class="brand-logo">
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+            <a href="index.html">
+                <img class="brand-logo" src="assets/GreenScoreLogo.png" alt="Green Score Logo" style="height: 90%;">
+            </a>
+        </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li>
                 <a href="index.html">
-                    <img class="brand-logo" src="assets/GreenScoreLogo.png" alt="Green Score Logo" style="height: 90%;">
+                    <i class="material-icons left">bar_chart</i>My Score
                 </a>
+            </li>
+            <li>
+                <a href="green-score-goals.html">
+                    <i class="material-icons left">grade</i>My Goals
+                </a>
+            </li>
+            <li>
+                <a href="green-score-news.html">
+                    <i class="material-icons left">people</i>Green Feed
+                </a>
+            </li>
+            <li>
+                <a href="about-the-score.html">
+                    <i class="material-icons left">help</i>About the Score
+                </a>
+            </li>
+            <li>
+                <a class="ft-green btn waves-effect waves-light modal-trigger" href="#connect-card">
+                    <i class="material-icons left">link</i>Link Cards
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- Mobile-Friendly Navigation -->
+<ul class="sidenav ft-lapis" id="mobile-demo">
+    <li class="right" style="z-index: 100; text-align: right;">
+        <a class="sidenav-close" href="#" style="padding: 0; margin: 0;">
+            <i class="material-icons white-text" style="padding: 0; margin: 0;">close</i>
+        </a>
+    </li>
+    <li>
+        <div class="user-view" style="width: 80%">
+            <a href="#">
+                <img src="assets/GreenScoreLogo.png" alt="Green Score Logo" style="height: 6em;">
             </a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li>
-                    <a href="index.html">
-                        <i class="material-icons left">bar_chart</i>My Score
-                    </a>
-                </li>
-                <li>
-                    <a href="green-score-news.html">
-                        <i class="material-icons left">people</i>Green Feed
-                    </a>
-                </li>
-                <li>
-                    <a href="about-the-score.html">
-                        <i class="material-icons left">help</i>About the Score
-                    </a>
-                </li>
-                <li>
-                    <a class="ft-green btn waves-effect waves-light modal-trigger" href="#connect-card">
-                        <i class="material-icons left">link</i>Link Cards
-                    </a>
-                </li>
-            </ul>
+            <a href="#name">
+                <span class="white-text name">Fifth Third Bank</span>
+            </a>
+            <a href="#">
+                <span class="white-text email">The Green Score</span>
+            </a>
         </div>
-    </nav>
-    <!-- Mobile-Friendly Navigation -->
-    <ul class="sidenav ft-lapis" id="mobile-demo">
-        <li class="right" style="z-index: 100; text-align: right;">
-            <a class="sidenav-close" href="#" style="padding: 0; margin: 0;">
-                <i class="material-icons white-text" style="padding: 0; margin: 0;">close</i>
-            </a>
-        </li>
-        <li>
-            <div class="user-view" style="width: 80%">
-                <a href="#">
-                    <img src="assets/GreenScoreLogo.png" alt="Green Score Logo" style="height: 6em;">
-                </a>
-                <a href="#name">
-                    <span class="white-text name">Fifth Third Bank</span>
-                </a>
-                <a href="#">
-                    <span class="white-text email">The Green Score</span>
-                </a>
-            </div>
-        </li>
-        <li>
-            <a class="white-text" href="index.html">
-                <i class="white-text material-icons left">bar_chart</i>My Score
-            </a>
-            <a class="white-text" href="green-score-news.html">
-                <i class="white-text material-icons left">people</i>Green Feed
-            </a>
-            <a class="white-text" href="about-the-score.html">
-                <i class="white-text material-icons left">help</i>About the Score
-            </a>
-            <a class="ft-green btn waves-effect waves-light modal-trigger sidenav-close" href="#connect-card">
-                <i class="material-icons white-text left">link</i>Link Cards
-            </a>
-        </li>
-        </div>
-    </ul>
-    <!-- End Navigation Content -->
-
+    </li>
+    <li>
+        <a class="white-text" href="index.html">
+            <i class="white-text material-icons left">bar_chart</i>My Score
+        </a>
+        <a class="white-text" href="green-score-goals.html">
+            <i class="white-text material-icons left">grade</i>My Goals
+        </a>
+        <a class="white-text" href="green-score-news.html">
+            <i class="white-text material-icons left">people</i>Green Feed
+        </a>
+        <a class="white-text" href="about-the-score.html">
+            <i class="white-text material-icons left">help</i>About the Score
+        </a>
+        <a class="ft-green btn waves-effect waves-light modal-trigger sidenav-close" href="#connect-card">
+            <i class="material-icons white-text left">link</i>Link Cards
+        </a>
+    </li>
+    </div>
+</ul>
+<!-- End Navigation Content -->
 
     <div class="container">
         <div class="row">
@@ -214,6 +221,9 @@
                         </li>
                         <li>
                             <a class="grey-text text-lighten-3" href="index.html">My Green Score</a>
+                        </li>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="green-score-goals.html">My Green Goals</a>
                         </li>
                         <li>
                             <a class="grey-text text-lighten-3" href="green-score-page.html">Green Score News</a>
