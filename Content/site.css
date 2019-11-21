@@ -53,6 +53,16 @@ body {
     color: #ffffff !important;
 }
 
+.ft-green-only {
+    background-color: #00af66 !important;
+    color: #00af66 !important;
+}
+
+.ft-light-green {
+    background-color: #04ff96 !important;
+    color: #04ff96 !important;
+}
+
 .ft-green-text {
     color: #00af66 !important;
     font-weight: 300;
@@ -61,6 +71,11 @@ body {
 .greyer-text {
     color: #0b142e;
     font-weight: lighter;
+}
+
+.greyer {
+    background-color: #0b142e !important;
+    color: #0b142e !important;
 }
 
 .light-text {
@@ -168,4 +183,18 @@ blockquote {
 
 .no-margin-right {
     margin-right: 0px !important;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-in {
+    flex: auto;
 }
