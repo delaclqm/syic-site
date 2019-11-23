@@ -19,7 +19,7 @@ $(document).ready(function () {
 
     if (page == 'green-score-goals.html') {
         drawChartsForGreenGoalsPage();
-    } else if ( page == 'index.html' ) {
+    } else if ( page == 'index.html' ||  page == '') {
         drawChartsForGreenScorePage();
     }
 });
