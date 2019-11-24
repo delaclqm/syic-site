@@ -20,8 +20,14 @@ $(document).ready(function () {
         drawChartsForGreenGoalsPage();
     } else if ( page == 'index.html' ||  page == '') {
         Chart.defaults.global.animation.easing = 'easeInOutCirc';
-        Chart.defaults.global.animation.duration = 2000;
+        Chart.defaults.global.animation.duration = 2000;        
         drawChartsForGreenScorePage();
+    }
+
+    if(!document.cookie) {
+        var instance = M.Modal.getInstance($('#landing'));
+        instance.open();
+        document.cookie = 'firstVist=false';
     }
 });
 
