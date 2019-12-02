@@ -22,6 +22,7 @@ body {
 
 .chat-box {
     padding: 0.75em !important;
+    border-radius: 1.5em !important;
 }
 
 .more-margin {
